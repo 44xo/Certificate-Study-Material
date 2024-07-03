@@ -388,6 +388,14 @@ AKS reduces the complexity and operational overhead of managing Kubernetes by sh
   - *Configuration Guidance:* Utilize Azure API Management's backup and restore capabilities, storing backups in customer-owned Azure Storage accounts.
 # Plan and implement security for storage
 
+## SAS
+A service shared access signature (SAS) delegates access to a resource in just one of the storage services: Azure Blob Storage, Azure Queue Storage, Azure Table Storage, or Azure Files. The URI for a service-level SAS consists of the URI to the resource for which the SAS will delegate access, followed by the SAS token.
+
+The SAS token is the query string that includes all the information that's required to authorize a request. The token specifies the resource that a client may access, the permissions granted, and the time period during which the signature is valid.
+
+A SAS can also specify the supported IP address or address range from which requests can originate, the supported protocol with which a request can be made, or an optional access policy identifier that's associated with the request.
+
+Finally, every SAS token includes a signature.
 ## Azure Storage
 
 - **Platform Overview:**
